@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="book.js" charset="UTF-8"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6fb6d393b3.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="materials/favicon.png"/>
+    <style>
+        .alert {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: none;
+        }
+        
+    </style>
+</head>
+<body style="background: url('materials/back.jpg'); background-repeat: no-repeat; background-size: cover; height: 80vh;">
+    <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container-fluid">
+            <div class="pb-0 mb-0">
+                <a class="navbar-brand fw-bold text-white pb-0 mb-0" href="#home">
+                    <img src="materials/logo.png" alt="Bootstrap" width="30" height="30" class="d-inline-block align-text-top">
+                    InkarTravel
+                </a>   
+            </div>
+            <button class="navbar-toggler border-light text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="index.html#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html#journal">Journal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="book.html">Book</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#travel" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Travel
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="nordic.html">Nordic countries</a></li>
+                        <li><a class="dropdown-item" href="american.html">American countries</a></li>
+                        <li><a class="dropdown-item" href="western.html">Western countries</a></li>
+                    </ul>
+                </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 bg-transparent border-light text-white" type="search" placeholder="" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="pt-3 container-fluid col-12 w-100 d-flex flex-column justify-content-center align-items-center">
+        <div id="flightBlock" class="p-3 rounded border col-6 bg-white">
+            <form id="submitForm" class="row g-3">
+                <div class="border-bottom p-2">
+                    <h3 class="fw-medium">Book a flight</h3>
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Trip type</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected value="1">One way</option>
+                        <option value="2">Round</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputAddress1" class="form-label">From</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected value="1">Astana</option>
+                        <option value="2">Almaty</option>
+                        <option value="3">Aktobe</option>
+                        <option value="4">Shymlent</option>
+                        <option value="5">Oskemen</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputAddress1" class="form-label">To</label>
+                    <select class="form-select" aria-label="Default select example" required>
+                        <option selected value="1">Almaty</option>
+                        <option value="2">Astana</option>
+                        <option value="3">Aktobe</option>
+                        <option value="4">Shymlent</option>
+                        <option value="5">Oskemen</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputAddress1" class="form-label">Airline</label>
+                    <select class="form-select" aria-label="Default select example" required>
+                        <option selected value="1">Airline 1</option>
+                        <option value="2">Airline 2</option>
+                        <option value="3">Airline 3</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputAddress1" class="form-label">Departure</label>
+                    <input id="input1" type="date" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputAddress2" class="form-label">Return</label>
+                    <input id="input2" type="date" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">Phone number</label>
+                    <input id="input3" type="tel" class="form-control" placeholder="87751234554" pattern="[0-9]{11}" id="phone" name="phone" required> 
+                </div>
+                <div class="col-md-6">
+                    <label for="inputFirstName" class="form-label">First name</label>
+                    <input id="input4" type="text" class="form-control" placeholder="First name" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputFLastName" class="form-label">Last name</label>
+                    <input id="input5" type="text" class="form-control" placeholder="Last name" required>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                        Check me out
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" id="submitFlight" class="btn btn-primary w-100">Book</button>
+                </div>
+            </form>
+        </div>
+        <div id="alertBox" class="alert">
+            <div class="card border-0" style="width: 18rem;">
+                <img src="materials/QR_Code_Model_1_Example.svg.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Use this QR code to enter the airplane</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

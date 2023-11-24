@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js" charset="UTF-8"></script>  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6fb6d393b3.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="materials/favicon.png"/>
+</head>
+<body>
+    <div class="d-flex flex-center col-12" style="background: url('materials/back.jpg'); background-repeat: no-repeat; background-size: cover; height: 80vh;">
+        <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
+            <div class="container-fluid">
+                <div class="pb-0 mb-0">
+                    <a class="navbar-brand fw-bold text-white pb-0 mb-0" href="#home">
+                    <img src="materials/logo.png" alt="Bootstrap" width="30" height="30" class="d-inline-block align-text-top">
+                    InkarTravel
+                    </a>
+                    
+                </div>
+                <button class="navbar-toggler border-light text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#journal">Journal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="book.html">Book</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#travel" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Travel
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="nordic.html">Nordic countries</a></li>
+                        <li><a class="dropdown-item" href="american.html">American countries</a></li>
+                        <li><a class="dropdown-item" href="western.html">Western countries</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 bg-transparent border-light text-white" type="search" placeholder="" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        
+        <div id="home" class="col-6 w-100 d-flex flex-column justify-content-center align-items-center text-center">
+            <h3 class="text-lg fw-bold" style="color: aliceblue; font-size: 70px; font-weight: 700;">Travel with us</h3>
+            <h1 style="color: #FFF4A3;font-weight: 700; margin-top: 30px!important; font-size: 23px;">Explore the world in any direction</h1>
+            <button id="moreButton" class="btn btn-outline-light text-uppercase mt-4 rounded-0 border-2 fw-bold" onclick="window.location.href='#journal'" type="submit" style="width: 150px; height: 40px; font-size: 13px;">More</button>
+        </div>
+    </div>
+
+    <div id="journal" class="container py-5 d-flex flex-column justify-content-center align-items-center">
+        <div class="col-11">
+            <h2 style="font-family: 'Montserrat', sans-serif;">Journal</h1>
+            <p class="fs-5" style="margin-bottom: -5px;">Our goal is to create a valuable resource for travel enthusiasts, offering them inspiration, information, and seamless booking options, ultimately enhancing their overall travel planning and enjoyment.</p>
+        </div>
+        <div class="my-4 col-11" style="background-color: black; height: 1px;"> 
+        </div>
+        <div id="carouselExampleCaptions" class="carousel slide col-11">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="materials/sea.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Mediterranean sea</h5>
+                        <p>Discover the Mediterranean's rich cultural heritage, vibrant cities, and charming coastal towns.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="materials/airplane.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Travel by air</h5>
+                        <p>Fly to your dream destinations and unlock a world of adventure, culture, and new experiences.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="materials/nature.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Nature</h5>
+                        <p>Immerse yourself in the wonders of nature and discover its serene beauty and awe-inspiring landscapes.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+     
+    <div class="container pb-5 d-flex flex-column justify-content-center align-items-center">
+        <div class="row col-11 d-flex justify-content-between">
+            <div class="col-sm-4 mb-3 mb-sm-0 border-0">
+                <div class="card text-white bg-dark">
+                    <div class="card-body">
+                        <h5 class="card-title">Western countries</h5>
+                        <p class="card-text">Discover the charm and diversity of Western countries, known for their rich history, modern cities, and cultural treasures.</p>
+                        <button id="play1" onclick="playAudio('click.mp3')" class="btn btn-outline-light" type="submit">Read more</button>
+                    </div>  
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card text-white bg-dark">
+                    <div class="card-body">
+                        <h5 class="card-title">Nordic countries</h5>
+                        <p class="card-text">Experience the unique Nordic way of life, with its emphasis on sustainability, outdoor activities, and a deep connection to nature.</p>
+                        <button id="play2" onclick="playAudio('click.mp3')" class="btn btn-outline-light" type="submit">Read more</button>
+                    </div>  
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card text-white bg-dark">
+                    <div class="card-body">
+                        <h5 class="card-title">American countries</h5>
+                        <p class="card-text">Embark on a journey through diverse landscapes and vibrant cultures across the American countries.</p>
+                        <button id="play3" onclick="playAudio('click.mp3')" class="btn btn-outline-light" type="button">Read more</button>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="audioPlayer" style="display: none;"></audio>
+    <script>
+        function playAudio(audioFile) {
+            var audio = document.getElementById("audioPlayer");
+            audio.src = audioFile;
+            audio.play();
+        }
+    </script>
+
+    <footer id="contact" class="bg-dark text-black d-flex flex-column justify-content-center">
+        <div class="container-fluid d-flex flex-column justify-content-center align-items-center pt-2 bg-dark">
+            <div class="text-center text-white font-monospace col-11 py-4">
+                <h1>Do you want to go?</h1>
+            </div>
+            <div class="d-flex flex-row col-11 justify-content-center col-10">
+                <input id="emailAddress" class="col-9" type="email" placeholder="Email address..." style="height: 50px;">
+                <button id="submitEmailAddress" type="submit" class="col-3 btn btn-success rounded-0">I want</button>
+            </div>
+            <div class="mt-4 col-11" style="background-color: rgb(255, 255, 255); height: 1px;"></div>
+        </div>
+        <section class="col-11 d-flex flex-column justify-content-center">
+            <div class="container text-md-start mt-5 text-white" style="margin-left: 36px;">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">InkarTravel</h6>
+                    <p>
+                        Website offers the opportunity to explore Western countries, Nordic countries, and American countries.
+                    </p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Places</h6>
+                    <p>
+                    <a href="nordic.html" class="text-reset">Nordic countries</a>
+                    </p>
+                    <p>
+                    <a href="western.html" class="text-reset">Western countries</a>
+                    </p>
+                    <p>
+                    <a href="american.html" class="text-reset">American countries</a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+                    <p>
+                    <a href="#home" class="text-reset">Home</a>
+                    </p>
+                    <p>
+                    <a href="#journal" class="text-reset">Journal</a>
+                    </p>
+                    <p>
+                    <a href="#home" class="text-reset">Travel</a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p>Balkhash, Kazakhstan</p>
+                    <p>220742@astanait.edu.kz</p>
+                    <p>+7-747-129-53-23</p>
+                </div>
+            </div>
+        </section>
+        <div class="container-fluid d-flex flex-row justify-content-center align-items-center">
+            <a class="btn" href="https://vk.com/chikibaaambonii" role="button"><i class="fa-brands fa-vk fa-xl" style="color: #faf5f5;"></i></a>
+            <a class="btn" href="https://t.me/ikosya_a" role="button"><i class="fa-brands fa-telegram fa-xl" style="color: #faf5f5;"></i></a>
+            <a class="btn" href="https://www.instagram.com/_ikosyaa/" role="button"><i class="fa-brands fa-instagram fa-xl" style="color: #faf5f5;"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
